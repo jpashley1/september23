@@ -1,6 +1,9 @@
 #products-index img {
   width: 300px;
+  position: relative;
+  margin: 0 auto;
 }
+
 
 html {
   scroll-behavior: smooth;
@@ -20,29 +23,53 @@ form {
   font-weight: 520;
 }
 
+form button {
+  margin-top: 12px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 200;
+}
+
 input {
   width: 200px;
   height: 12px;
   padding: 10px;
   margin: 5px 0;
-  border: 2px solid #ccc;
+  border: 1px solid #ccc;
   border-radius: 5px;
   font-size: 13px;
-  border-color: rgb(151, 148, 148);
+ 
 }
 
-button {
-  margin-top: 16px;
-  font-weight: 550;
-  background-color: rgb(209, 217, 217);
+#products-index button {
+  margin-top: 0px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 10;
+  color: rgb(31, 31, 31);
+  background-color: rgb(229, 223, 223);
   align-items: flex-end;
-  border-radius: 20%;
+  border: 1px;
+  border-radius: 5%;
+  border-style: ridge;
+  border-color: rgb(255, 255, 255);
+  padding: 0.9%;
+}
+
+#products-index p {
+  text-indent: 2px;
+  font-size: 14px;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 600;
+  color: rgb(8, 191, 8);
+
 }
 
 h2 {
+  
   margin-top: 70px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 16px; /* Adjust size as needed */
+  
+
 }
 
 
@@ -79,7 +106,7 @@ nav a:hover {
 }
 
 header a {
-  font-weight: 550;
+  font-weight: 290;
   color: black; /* Change link color to black */
   text-decoration: none; /* Remove underline */
   padding: 0 15px; /* Add some spacing between links */
