@@ -1,5 +1,6 @@
 import { ProductsIndex } from "./ProductsIndex";
 import { ProductsNew } from "./ProductsNew";
+import { ProductsShow } from "./ProductsShow";
 import { Modal } from "./Modal"; 
 import  axios from 'axios';
 import { useState, useEffect } from 'react';
@@ -8,7 +9,7 @@ export function ProductsPage() {
   // var firstArray = "testJPAtest";
   const [products, setProducts] = useState([]);
   const [isProductsShowVisible, setIsProductsShowVisible] = useState(false);
-  const [currentProduct, setCurrentProduct] = useState({name: "testJPAtest"});
+  const [currentProduct, setCurrentProduct] = useState({});
 
 
   const getProductData = () => {
@@ -51,8 +52,7 @@ useEffect(getProductData, []);
     <main>
       {/* <button onClick={showModal}>Show The Modal</button> */}
       <Modal show={isProductsShowVisible} onClose={closeModal} products={products}>
-      <p>{currentProduct.description}</p>
-        <p>TEST</p> 
+      <ProductsShow product={currentProduct}/>
         </Modal>
       <ProductsNew />
       <ProductsIndex products={products} onShow={showModal}/>
